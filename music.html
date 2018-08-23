@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SAGA - Music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {	
+	font-family: Calibri;
+	background-color: black;
+	margin: 0px;
+	color: white;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 1vmin;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 5px;
+  }
+}
+
+.box {
+    display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;	
+}
+
+.sagaflex {
+	display: flex;
+	margin: none;
+	justify-content: space-around;
+	border-style: none none solid none;
+	border-width: 3px;
+	border-color: #48001C;
+}
+
+.saga {
+	display: flex;
+	min-width: 90%;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.saga p{
+	flex-basis: 250px;
+	font-size: 3em;
+	color: #900C3F;
+	padding: 1vw 2vw;
+	font-family: 'Marcellus', serif;
+	border-style: none solid none solid;
+	border-width: 2px;
+	border-color: #48001C;
+	margin: auto;
+}
+
+.saga a{
+	text-decoration: none;
+	flex-basis: 250px;
+	font-size: 3em;
+	color: #900C3F;
+	padding: 1vw 2vw;
+	font-family: 'Marcellus', serif;
+	margin: auto;
+}
+
+.saga a:hover {
+	color: #926476;
+}
+
+.musicbox{
+	display: flex;
+	flex-direction: rows;
+	margin: none;
+	justify-content: space-around;
+	align-margin: space-around;
+}
+
+.musicbox img{
+	padding: 1vw 2vw;
+	border-style: none none solid none;
+	border-width: 2px;
+	border-color: #48001C;
+	max-width: 1280px;
+	max-height: 720px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class = "sagaflex">
+<div class = "saga">
+	<a href='SAGA.html'>SAGA</a>
+	<a href='crew.html' >Crew</a>
+	<p >Music</p>
+	<a href='scripture.html' >Scripture</a>
+	<a href='randy.html' >Randy</a>
+</div>
+</div>
+
+<div class="musicbox">
+	<img src="assets/remember.jpg" alt="remember" onclick="document.getElementById('remember').play();">
+	<audio id="remember" >
+		<source src="assets/remember.mp3" type="audio/mpeg">
+	</audio>
+</div>
+
+<div class="musicbox">
+	<img src="assets/opposites.jpg" alt="opposites" onclick="document.getElementById('opposites').play();">
+	<audio id="opposites" >
+		<source src="assets/opposites.mp3" type="audio/mpeg">
+	</audio>
+</div>
+
+</body>
+</html>

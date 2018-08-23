@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SAGA - Crew</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	
+	font-family: Calibri;
+	background-color: black;
+	margin: 0px;
+	color: white;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 1vmin;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 5px;
+  }
+}
+
+.sagaflex {
+	display: flex;
+	margin: none;
+	justify-content: space-around;
+	border-style: none none solid none;
+	border-width: 3px;
+	border-color: #48001C;
+}
+
+.saga {
+	display: flex;
+	min-width: 90%;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.saga p{
+	flex-basis: 250px;
+	font-size: 3em;
+	color: #900C3F;
+	padding: 1vw 2vw;
+	font-family: 'Marcellus', serif;
+	border-style: none solid none solid;
+	border-width: 2px;
+	border-color: #48001C;
+	margin:auto;
+}
+
+.saga a{
+	text-decoration: none;
+	flex-basis: 250px;
+	font-size: 3em;
+	color: #900C3F;
+	padding: 1vw 2vw;
+	font-family: 'Marcellus', serif;
+	margin: auto;
+}
+
+.saga a:hover {
+	color: #926476;
+}
+
+.box {
+    display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;	
+}
+
+.box .imageRow {
+	flex: 1;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	text-align: center;
+
+}
+
+
+.box .imageRow p {
+	flex: 1 1 auto;
+	font-size: 2.5em;
+	font-family: 'Marcellus', serif;
+	color: #900C3F;
+	border-style: none solid none solid;
+	border-width: 1px;
+	border-color: #48001C;
+	flex-basis: 50px;
+	-webkit-transition: flex-basis 500ms;
+	transition: flex-basis 500ms;
+}
+
+.box .imageRow p:hover{
+	flex-basis: 180px;
+}
+
+
+#sheik{
+	background-image: url("assets/sheikCBW1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#sheik:hover{
+	background-image: url("assets/sheikCBW2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#falcon{
+	background-image: url("assets/falconCBW1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#falcon:hover{
+	background-image: url("assets/falconCBW2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#marth{
+	background-image: url("assets/marthCBW1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#marth:hover{
+	background-image: url("assets/marthCBW2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#falco{
+	background-image: url("assets/falcoCBW1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#falco:hover{
+	background-image: url("assets/falcoCBW2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#fox{
+	background-image: url("assets/foxCBW1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#fox:hover{
+	background-image: url("assets/foxCBW2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+</style>
+</head>
+<body>
+<div class="box">
+<div class = "sagaflex">
+<div class = "saga">
+	<a href='SAGA.html'>SAGA</a>
+	<p >Crew</p>
+	<a href='music.html'>Music</a>
+	<a href='scripture.html' >Scripture</a>
+	<a href='randy.html' >Randy</a>
+</div>
+</div>
+
+<div class = "imageRow">
+	<p id="sheik">401k</p>
+	<p id="falcon">fazz</p>
+	<p id="marth">Glitter</p>
+	<p id="falco">Kraft</p>
+	<p id="fox">QED</p>
+</div>
+</div>
+
+</body>
+</html>
